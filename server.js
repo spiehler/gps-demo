@@ -4,9 +4,17 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
-
-const file = '/dev/ttyUSB3';
-//const file = 'COM8';
+// use first command line parameter for serial interface
+// linux: /dev/ttyUSB3
+// windows: COM8
+var myArgs = process.argv.slice(2);
+const file = myArgs[0];
+if (file == undefined) {
+  console.log('Usage: gps-demo [serial Port]');
+  process.exit(1);
+} else {
+  console.log('Using serial interface:', file);
+}
 
 const SerialPort = require('serialport');
 const parsers = SerialPort.parsers;
