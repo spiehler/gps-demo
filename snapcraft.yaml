@@ -7,7 +7,7 @@ description: |
 
 grade: stable
 confinement: devmode
-base: core18
+base: core20
 
 architectures:
   - build-on: armhf
@@ -15,7 +15,7 @@ architectures:
 
 parts:
   gps-demo:
-    plugin: nodejs
+    plugin: npm
     nodejs-version: 14.16.0
     nodejs-package-manager: npm    
     source: .
