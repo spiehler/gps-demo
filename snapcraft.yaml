@@ -22,4 +22,5 @@ parts:
 
 apps:
   gps-demo:
-    command: node server.js
+    command: gps-demo
+    plugs: [network-bind]

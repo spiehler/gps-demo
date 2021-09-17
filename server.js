@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 
 const app = require('express')();
 const http = require('http').Server(app);
