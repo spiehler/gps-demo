@@ -22,5 +22,5 @@ parts:
 
 apps:
   gps-demo:
-    command: gps-demo
+    command: bin/gps-demo
     plugs: [network-bind]
