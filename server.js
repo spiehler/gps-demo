@@ -29,7 +29,7 @@ var gps = new GPS;
 gps.state.bearing = 0;
 var prev = {lat: null, lon: null};
 
-http.listen(3000, function() {
+http.listen(80, function() {
 
   console.log('listening on *:80');
 
