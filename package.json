@@ -1,0 +1,19 @@
+{
+  "name": "gps-demo",
+  "version": "1.0.0",
+  "description": "GPS.js Demo Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "gps-demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiehler/gps-demo.git"
+  },
+  "author": "Stefan Piehler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spiehler/gps-demo/issues"
+  },
+  "homepage": "https://github.com/spiehler/gps-demo#readme"
+}
