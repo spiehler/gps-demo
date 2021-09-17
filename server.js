@@ -3,10 +3,9 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
-// var file = '/dev/cu.usbserial';
-//var file = '/dev/tty.usbserial';
-//const file = '/dev/tty.usbmodem1421';
-const file = '/dev/ttyUSB0';
+
+//const file = '/dev/ttyUSB0';
+const file = 'COM8';
 
 const SerialPort = require('serialport');
 const parsers = SerialPort.parsers;
