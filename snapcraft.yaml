@@ -11,6 +11,8 @@ base: core18
 parts:
   gps-demo:
     plugin: nodejs
+    nodejs-version: 14.15.3
+    nodejs-package-manager: npm    
     source: .
 
 apps:
