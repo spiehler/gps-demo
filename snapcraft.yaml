@@ -1,12 +1,17 @@
 name: gps-demo
-version: git
+version: '0.0.1'
 summary: GPS Demo Applikation
 description: |
   Listen to specific COM port:-
     $ gps-demo /dev/ttyUSB3
 
+grade: stable
 confinement: devmode
 base: core18
+
+architectures:
+  build-on: amd64
+  run-on: arm64
 
 parts:
   gps-demo:
@@ -17,4 +22,4 @@ parts:
 
 apps:
   gps-demo:
-    command: gps-demo
+    command: node server.js
