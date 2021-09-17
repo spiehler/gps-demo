@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "GPS.js Demo Project",
   "main": "server.js",
-  "scripts": {
-    "test": "gps-demo"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spiehler/gps-demo.git"

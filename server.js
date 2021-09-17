@@ -31,7 +31,7 @@ var prev = {lat: null, lon: null};
 
 http.listen(3000, function() {
 
-  console.log('listening on *:3000');
+  console.log('listening on *:80');
 
   gps.on('data', function() {
     if (prev.lat !== null && prev.lon !== null) {
