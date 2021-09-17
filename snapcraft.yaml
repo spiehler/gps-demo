@@ -16,8 +16,7 @@ architectures:
 parts:
   gps-demo:
     plugin: npm
-    nodejs-version: 14.16.0
-    nodejs-package-manager: npm    
+    npm-node-version: 14.16.0
     source: .
 
 apps:
