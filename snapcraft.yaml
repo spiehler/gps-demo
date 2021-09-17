@@ -11,7 +11,7 @@ base: core20
 
 architectures:
   - build-on: armhf
-    run-on: armhf
+  - run-on: armhf
 
 parts:
   gps-demo:
@@ -22,4 +22,7 @@ parts:
 apps:
   gps-demo:
     command: bin/gps-demo
-    plugs: [network-bind]
+    plugs: 
+      - network
+      - network-bind
+      - serial-port
