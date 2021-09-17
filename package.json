@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/spiehler/gps-demo.git"
   },
+  "bin": {
+    "gps-demo": "server.js"
+  },  
   "author": "Stefan Piehler",
   "license": "MIT",
   "bugs": {

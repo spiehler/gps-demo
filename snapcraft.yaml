@@ -1,0 +1,18 @@
+name: gps-demo
+version: git
+summary: GPS Demo Applikation
+description: |
+  Listen to specific COM port:-
+    $ gps-demo /dev/ttyUSB3
+
+confinement: devmode
+base: core18
+
+parts:
+  gps-demo:
+    plugin: nodejs
+    source: .
+
+apps:
+  gps-demo:
+    command: gps-demo
