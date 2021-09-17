@@ -10,8 +10,8 @@ confinement: devmode
 base: core18
 
 architectures:
-  - build-on: amd64
-    run-on: amd64
+  - build-on: armhf
+    run-on: armhf
 
 parts:
   gps-demo:

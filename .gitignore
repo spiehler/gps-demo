@@ -1,6 +1,9 @@
 # package lock
 package-lock.json
 
+# snap package
+gps-demo_0.0.1_armhf.snap
+
 # Logs
 logs
 *.log
