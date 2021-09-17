@@ -4,8 +4,8 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 
-//const file = '/dev/ttyUSB0';
-const file = 'COM8';
+const file = '/dev/ttyUSB0';
+//const file = 'COM8';
 
 const SerialPort = require('serialport');
 const parsers = SerialPort.parsers;
@@ -29,9 +29,9 @@ var gps = new GPS;
 gps.state.bearing = 0;
 var prev = {lat: null, lon: null};
 
-http.listen(80, function() {
+http.listen(3000, function() {
 
-  console.log('listening on *:80');
+  console.log('listening on *:3000');
 
   gps.on('data', function() {
     if (prev.lat !== null && prev.lon !== null) {
