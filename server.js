@@ -4,7 +4,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 
-const file = '/dev/ttyUSB0';
+const file = '/dev/ttyUSB1';
 //const file = 'COM8';
 
 const SerialPort = require('serialport');
