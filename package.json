@@ -9,7 +9,7 @@
   },
   "bin": {
     "gps-demo": "server.js"
-  },  
+  },
   "author": "Stefan Piehler",
   "license": "MIT",
   "bugs": {
