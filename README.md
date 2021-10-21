@@ -1,2 +1,2 @@
-# gps-demo
-Demo project for GPS.js
+# gps-driver
+Driver for ArduSimple GNSS receiver
